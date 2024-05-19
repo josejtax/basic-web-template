@@ -1,0 +1,71 @@
+/*ESTILOS PAGINA DE CONTACTO*/
+
+/*SECCION 1*/
+
+#seccion1 {
+    height: 70vh;
+    background: linear-gradient(to bottom, #002237, rgba(0, 67, 106, 0.616)), url(/assets/img/banner-contacto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*SECCION 2*/
+
+#seccion2 {
+    display: flex;
+    margin: 100px 150px;
+}
+
+#seccion2 [class^="parte"] {
+    width: 50%;
+}
+
+#seccion2 form {
+    display: flex;
+    flex-direction: column;
+}
+
+#seccion2 form input,
+#seccion2 form textarea {
+    border: none;
+    border-bottom: 1px solid #000;
+    margin: 5px 0;
+}
+
+#seccion2 form input::placeholder,
+#seccion2 form textarea::placeholder {
+    padding: 0 20px;
+}
+
+#seccion2 form input:focus-visible,
+#seccion2 form textarea:focus-visible {
+    outline: none;
+}
+
+input[type='submit'] {
+    margin-top: 20px !important;
+    background-color: #00436a;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+input[type='submit']:hover {
+    border: 1px solid #00436a !important;
+    background-color: transparent;
+    color: #00436a;
+}
+
+/*TABLETS*/
+@media (max-width: 1360px) {
+    #seccion2 {
+        flex-direction: column;
+        margin: 20px 40px !important;
+    }
+
+    #seccion2 [class^="parte"] {
+        width: 100%;
+    }
+}

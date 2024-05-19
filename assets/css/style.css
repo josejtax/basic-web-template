@@ -1,0 +1,215 @@
+/*ESTILOS GLOBALES*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00436a;
+    border-radius: 20px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.btn-blanco {
+    background-color: #fff;
+    color: #00436a;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.btn-blanco:hover {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+.btn-azul {
+    background-color: #00436a;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.btn-azul:hover {
+    border: 1px solid #00436a;
+    background-color: transparent;
+    color: #00436a;
+}
+
+.btn-azul-claro {
+    background-color: #0CE0FF;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.btn-azul-claro:hover {
+    border: 1px solid #0CE0FF;
+    background-color: transparent;
+    color: #0CE0FF;
+}
+
+/*FORMATO DE TEXTOS*/
+
+h1 {
+    font-size: 64px;
+    font-weight: 600;
+    margin: 0;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 600;
+    margin: 0;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+}
+
+h4 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+}
+
+h5 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+}
+
+h6 {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/*HEADER*/
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    border-bottom: 1px solid #fff;
+    z-index: 1;
+    transition: 1s;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+header .logo {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+header .logo h2 {
+    margin: 0;
+}
+
+header .menu_bar {
+    display: none;
+}
+
+header nav ul {
+    overflow: hidden;
+    list-style: none;
+}
+
+header nav ul li {
+    float: left;
+}
+
+header nav ul li a {
+    color: #fff;
+    padding: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@media (max-width: 1024px) {
+    header .navbar {
+        position: absolute;
+        width: 100%;
+        background: #fff;
+        top: 100%;
+        display: none;
+        box-shadow: 0px 12px 20px 0px #00000025;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .menu_bar {
+        display: block;
+    }
+
+    header .menu_bar .btn-menu-movil {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        float: right;
+    }
+
+    header nav ul li a {
+        color: #000;
+    }
+}
+
+/*FOOTER*/
+
+footer {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #00436a;
+    padding: 50px 0;
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 750px) {
+    footer {
+        height: auto;
+        flex-direction: column;
+    }
+
+    footer div {
+        border-bottom: 1px solid #fff;
+    }
+
+    footer div:last-child {
+        border-bottom: none;
+    }
+}

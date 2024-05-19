@@ -1,0 +1,146 @@
+/*ESTILOS PAGINA DE INICIO*/
+
+img {
+    width: 100%;
+}
+
+/*SECCION1*/
+
+#seccion1 {
+    background-image: linear-gradient(to right, #002237, rgba(0, 67, 106, 0.616)), url(/assets/img/header-inicio.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+#seccion1 h1 {
+    color: #fff;
+}
+
+#seccion1 h1 span {
+    font-size: 64px;
+    font-weight: 600;
+    color: #f1f1f1;
+    text-decoration: line-through;
+    text-decoration-color: #0CE0FF;
+}
+
+#seccion1 p {
+    color: #fff;
+}
+
+/*SECCION2*/
+
+#seccion2 {
+    display: flex;
+    margin: 100px 50px;
+}
+
+#seccion2 [class^="parte"] {
+    position: relative;
+    box-shadow: 4px 4px 10px 0px #00436a69;
+    transition: all 500ms ease;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+#seccion2 [class^="parte"] div {
+    padding: 20px;
+}
+
+#seccion2 [class^="parte"] svg {
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    position: relative;
+    left: 90%;
+}
+
+#seccion2 [class^="parte"]:hover {
+    transform: translateY(-10px);
+    background-color: #027bc23a;
+    box-shadow: 20px 20px 10px 0px #00436a69;
+}
+
+#seccion2 [class^="parte"]:hover .btn-azul {
+    border: 1px solid #00436a;
+    background-color: transparent;
+    color: #00436a;
+    font-weight: 500;
+}
+
+/*SECCION3*/
+
+#seccion3 {
+    display: flex;
+    margin: 100px 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+#seccion3 [class^="parte"] {
+    width: 50%;
+}
+
+#seccion3 .parte1 {
+    text-align: center;
+}
+
+/*SECCION5*/
+
+#seccion5 div {
+    display: flex;
+}
+
+#seccion5 div [class^="parte"] {
+    width: 50%;
+    margin: 50px;
+}
+
+#seccion5 div .parte2 {
+    flex-direction: column;
+}
+
+#seccion5 div .parte1 iframe {
+    border-radius: 12px;
+}
+
+#seccion5 div .parte2 {
+    background: #00436ada;
+    padding: 50px;
+    border-radius: 12px;
+    color: #fff;
+}
+
+/*TABLETS*/
+@media (max-width: 1025px) {
+    [id^="seccion"]:not(:first-child) {
+        flex-direction: column;
+    }
+
+    #seccion5 div {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #seccion5 div .parte2 {
+        padding: 0;
+    }
+
+    #seccion5 div [class^="parte"] {
+        margin: 0;
+        margin: 10px 0;
+    }
+
+    [id^="seccion"] [class^="parte"] {
+        width: 100% !important;
+    }
+
+    iframe {
+        height: 300px;
+    }
+    
+}

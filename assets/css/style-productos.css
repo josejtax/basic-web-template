@@ -1,0 +1,94 @@
+/*ESTILOS PAGINA DE PRODUCTOS*/
+
+/*SECCION 1*/
+
+#seccion1 {
+    height: 70vh;
+    background: linear-gradient(to bottom, #002237, rgba(0, 67, 106, 0.616)), url(/assets/img/banner-producto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*SECCION 2*/
+
+#seccion2 {
+    margin: 50px 150px;
+}
+
+#seccion2 h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #0cdfff76;
+}
+
+#seccion2 [class^="general"] {
+    display: flex;
+}
+
+#seccion2 [class^="parte"] {
+    border: 1px solid #00436a;
+    padding: 20px 50px;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+#seccion2 [class^="parte"]:hover {
+    transition: 0.5s;
+    background-color: #0cdfff76;
+}
+
+/*SECCION 3*/
+
+#seccion3 {
+    margin: 50px 150px;
+}
+
+#seccion3 span {
+    font-weight: 300;
+    color: #747474;
+    font-size: 14px;
+}
+
+/*SECCION 4*/
+
+#seccion4 {
+    margin: 50px 150px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    font-weight: 900;
+}
+
+td {
+    font-weight: 400;
+}
+
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/*TABLETS*/
+@media (max-width: 1360px) {
+    #seccion2 [class^="general"] {
+        flex-direction: column;
+    }
+
+    [id^="seccion"]:not(:first-child) {
+        margin: 20px 40px !important;
+    }
+}

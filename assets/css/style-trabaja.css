@@ -1,0 +1,103 @@
+/*ESTILOS PAGINA DE TRABAJA CON NOSOTROS*/
+
+/*SECCION1*/
+
+#seccion1 {
+    height: 70vh;
+    background: linear-gradient(to bottom, #002237, rgba(0, 67, 106, 0.616)), url(/assets/img/banner-trabaja-con-nosotros.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*SECCION 2*/
+
+#seccion2 {
+    display: flex;
+    margin: 100px 150px;
+}
+
+#seccion2 [class^="parte"] {
+    width: 50%;
+    margin: 0 20px;
+}
+
+#seccion2 form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#seccion2 label {
+    margin: 5px;
+    text-decoration: underline;
+}
+
+#seccion2 form input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    margin: 5px;
+}
+
+#seccion2 form input:focus-visible {
+    outline: none;
+}
+
+#seccion2 form .nombre,
+#seccion2 form .ciudad,
+#seccion2 form .fecha,
+#seccion2 form .contacto,
+#seccion2 form .formacion [class^="numero"],
+#seccion2 form .idiomas [class^="numero"] {
+    display: flex;
+    margin: 5px 0;
+}
+
+#seccion2 form .fecha div {
+    display: flex;
+    width: 100%;
+    margin: 0 5px;
+    flex-direction: column;
+}
+
+#seccion2 form select {
+    border: none;
+    outline: none;
+}
+
+#seccion2 form input[type='checkbox'] {
+    width: auto;
+    margin-top: 25px;
+}
+
+#seccion2 form .formacion [class^="numero"]:last-child,
+#seccion2 form .idiomas [class^="numero"]:last-child {
+    margin-bottom: 20px;
+}
+
+#seccion2 form input[type='submit'] {
+    margin-top: 15px;
+    background-color: #00436a;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#seccion2 form input[type='submit']:hover {
+    border: 1px solid #00436a;
+    background-color: transparent;
+    color: #00436a;
+}
+
+@media (max-width: 1500px) {
+    #seccion2 {
+        flex-direction: column;
+        margin: 20px 40px !important;
+    }
+    #seccion2 [class^="parte"] {
+        width: 100%;
+    }
+}
